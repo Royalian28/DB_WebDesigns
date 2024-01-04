@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-dmW1N9B/RIS9y8lO64smHo3p5YP+87eI0Gu9DddO8G7S+SLiV6VS5j78hMz6PW5B" crossorigin="anonymous">
+
+</head>
+<body>
+    <form id="myForm">
+        <h2>Form Validation.</h2>
+        <div class="fg fullname">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" placeholder="Enter your Name!.">
+        </div>
+        <div class="fg email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your Mail-ID!.">
+        </div>
+        <div class="fg password">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter the Password!.">
+            <i id="pass-toggle-btn" class="fas fa-eye"></i>
+        </div>
+        <div class="fg date">
+            <label for="Bdate">Birth Date:</label>
+            <input type="date" id="Bdate" placeholder="Select Your Birth Date">
+        </div>
+        <div class="fg gender">
+            <label for="gender">Gender</label>
+            <select  id="gender">
+                <option value="" select disabled>Select Your Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="fg submit-btn">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+    <div id="thank-you-content" style="display: none;">
+        <h1>Thank you for Filling this Form.!</h1>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
